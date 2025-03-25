@@ -4,10 +4,6 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 
-
-import { FaBox, FaAlignLeft } from 'react-icons/fa';
-import { IoIosArrowDown } from 'react-icons/io';
-
 const categories = [
   {
     title: 'Home and outdoor',

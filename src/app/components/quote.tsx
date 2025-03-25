@@ -1,4 +1,3 @@
-import { FaEnvelope, FaBoxOpen } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 
 export default function Quote() {

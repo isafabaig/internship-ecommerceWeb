@@ -1,4 +1,5 @@
 import { FaSearch, FaBoxOpen, FaShippingFast, FaShieldAlt } from "react-icons/fa";
+import Image from "next/image";
 
 const Extraservices = () => {
   const services = [
@@ -23,26 +24,30 @@ const Extraservices = () => {
       icon: <FaShieldAlt />,
     },
   ];
+
   return (
     <div className="p-6" data-aos="fade-up">
-      <h2 className="text-lg font-semibold mb-4">Our extra services</h2>
+      <h2 className="text-lg font-semibold mb-4">Our Extra Services</h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {services.map((service, index) => (
           <div
             key={index}
             className="relative bg-white rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105"
           >
-            {/* Image Section*/}
-            <div className="relative">
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-full h-32 object-cover"
+            {/* Image Section */}
+            <div className="relative w-full h-32">
+              <Image 
+                src={service.image} 
+                alt={service.title} 
+                layout="fill" 
+                objectFit="cover" 
+                className="rounded-t-lg"
+                priority
               />
               <div className="absolute inset-0 bg-black opacity-30"></div>
             </div>
             
-            {/* Icon section*/}
+            {/* Icon Section */}
             <div className="absolute bottom-16 right-4 bg-blue-100 p-3 rounded-full text-blue-600 text-lg shadow-md">
               {service.icon}
             </div>

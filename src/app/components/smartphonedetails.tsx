@@ -8,7 +8,6 @@ import RelatedProducts from './relatedproducts';
 
 const SmartphoneDetails = () => {
   const tabs = ['Description', 'Reviews', 'Shipping', 'About seller'];
-  const [activeTab, setActiveTab] = useState('Description');
 
   const products = [
     { img: '/image/ipad.jpg', title: 'Apple iPad - Latest Generation', price: '$7.00 - $99.50' },

@@ -31,7 +31,7 @@ const Smartphone = () => {
                   alt={`Thumbnail ${index + 1}`}
                   width={80}
                   height={80}
-                  className="cursor-pointer border rounded-md"
+                  className='cursor-pointer border rounded-md'
                   onClick={() => setMainImage(img)}
                 />
               ))}

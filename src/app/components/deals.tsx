@@ -1,6 +1,5 @@
 'use client'
 
-import AOS from 'aos';
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
