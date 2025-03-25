@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Hero from "./hero/page";
 import Deals from "./components/deals";
 import Categories from "./components/categories";

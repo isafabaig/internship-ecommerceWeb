@@ -5,7 +5,7 @@ import Image from "next/image";
 import SavedItems from "../components/saveditems";
 
 const CartPage = () => {
-  const [cartItems, setCartItems] = useState([
+  const [cartItems] = useState([
     {
       img: "/image/ipad.jpg",
       title: "Smartphone with multiple colors, for men and lady",

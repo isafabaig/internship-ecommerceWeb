@@ -26,7 +26,6 @@ export default function Filter() {
   const [showPrice, setShowPrice] = useState(false);
   const [showCondition, setShowCondition] = useState(false);
   const [showRating, setShowRating] = useState(false);
-  const [showManufacturer, setShowManufacturer] = useState(false);
 
   const filteredProducts = products.filter(product => product.price <= priceRange);
 

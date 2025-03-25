@@ -46,7 +46,7 @@ const Smartphone = () => {
             <h2 className="text-xl font-semibold">Latest Smartphone 5G</h2>
             <p className="text-red-500 text-lg font-bold">$799.00</p>
             <p><span className="font-medium">Brand:</span> TechPro</p>
-            <p><span className="font-medium">Display:</span> 6.7" AMOLED, 120Hz</p>
+            <p><span className="font-medium">Display:</span> 6.7 AMOLED, 120Hz</p>
             <p><span className="font-medium">Processor:</span> Snapdragon 8 Gen 2</p>
             <p><span className="font-medium">RAM:</span> 12GB</p>
             <p><span className="font-medium">Storage:</span> 256GB</p>
@@ -71,7 +71,7 @@ const Smartphone = () => {
               Send Inquiry
             </button>
             <button className="border w-full mt-2 py-2 rounded-md hover:cursor-pointer hover:text-blue-500">
-              Seller's Profile
+              Sellers Profile
             </button>
 
             {/* Save for Later */}
