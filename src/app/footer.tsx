@@ -1,14 +1,11 @@
 import Image from "next/image";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
-import Newsletter from "./components/newsLetter/page";
 
 const Footer = () => {
   return (
-    <main>
-      <Newsletter />
-      <footer className=" py-10 px-4 md:px-16 border-t">
+      <footer className=" py-10 px-4 md:px-16 border-t" data-aos="fade-up">
         <div className="max-w-6xl mx-auto">
-          {/* Grid Layout with One Row for Headings */}
+          
           <div className="grid grid-cols-6 gap-6">
             {/* Brand Section */}
             <div className="bg-white">
@@ -61,8 +58,8 @@ const Footer = () => {
             <div>
               <h3 className="text-sm font-semibold text-gray-800">Get App</h3>
               <div className="mt-2 space-y-2">
-                <Image src="/image/market-button-apple.png" alt="App Store" width={120} height={40} />
-                <Image src="/image/market-button-playstore.png" alt="Google Play" width={120} height={40} />
+                <Image src="/image/market-button-apple.png" alt="App Store" width={120} height={40} className="hover:cursor-pointer" />
+                <Image src="/image/market-button-playstore.png" alt="Google Play" width={120} height={40} className="hover:cursor-pointer"/>
               </div>
             </div>
           </div>
@@ -81,7 +78,6 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </main>
 
   );
 };

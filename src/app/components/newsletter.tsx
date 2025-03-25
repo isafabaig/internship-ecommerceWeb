@@ -2,7 +2,7 @@ import { Mail } from "lucide-react";
 
 const Newsletter = () => {
   return (
-    <div className="bg-gray-100 py-10 px-4">
+    <div className="bg-gray-100 py-10 px-4" data-aos="fade-up">
       <div className="max-w-2xl mx-auto text-center">
         {/* Heading */}
         <h2 className="text-lg font-semibold text-gray-900">Subscribe on our newsletter</h2>
@@ -20,7 +20,7 @@ const Newsletter = () => {
               className="pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
-          <button className="ml-2 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
+          <button className="ml-2 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 hover:cursor-pointer">
             Subscribe
           </button>
         </div>

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { FaUser, FaRegEnvelope, FaHeart, FaShoppingCart, FaBars } from 'react-icons/fa';
 import { IoMdArrowDropdown } from 'react-icons/io';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,21 +32,21 @@ const Navbar = () => {
         </div>
         {/* Icons */}
         <div className="flex space-x-4 text-gray-600">
-          <div className="flex flex-col items-center text-sm">
+          <div className="flex flex-col items-center text-sm hover:cursor-pointer">
             <FaUser size={18} />
             <span>Profile</span>
           </div>
-          <div className="flex flex-col items-center text-sm">
+          <div className="flex flex-col items-center text-sm hover:cursor-pointer">
             <FaRegEnvelope size={18} />
             <span>Message</span>
           </div>
-          <div className="flex flex-col items-center text-sm">
+          <div className="flex flex-col items-center text-sm hover:cursor-pointer">
             <FaHeart size={18} />
             <span>Orders</span>
           </div>
-          <div className="flex flex-col items-center text-sm">
-            <FaShoppingCart size={18} />
-            <span>My cart</span>
+          <div className="flex flex-col items-center text-sm hover:cursor-pointer">
+          <Link href={"/cart"}><FaShoppingCart size={18} />
+             <span>My cart</span></Link>
           </div>
         </div>
       </div>
